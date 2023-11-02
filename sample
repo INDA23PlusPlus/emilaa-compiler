@@ -1,0 +1,18 @@
+i32 main() {
+    i32 N = 35;
+    i32 i = 0;
+    
+    i32 a = 0;
+    i32 b = 1;
+    
+    while i < (N - 1) {
+        i32 next = a + b;
+        a = b;
+        b = next;
+        i = i + 1;
+    }
+    
+    print(b);
+
+    return 0;
+}

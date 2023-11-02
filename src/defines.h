@@ -16,12 +16,16 @@ typedef double              f64;
 typedef signed char         b8;
 typedef signed int          b32;
 
-#define TRUE 0
-#define FALSE 1
+#define TRUE 1
+#define FALSE 0
 
 typedef enum ErrorType {
     UNKNOWN_ERROR = -1,
     SUCCESS,
     NO_INPUT,
-    INPUT_NOT_FOUND
+    INPUT_NOT_FOUND,
+    SYNTAX_ERROR,
+    UNEXPECTED_TOKEN,
+    SEMANTIC_ERROR,
+    FAILED_TO_CREATE_FILE
 } ErrorType;
